@@ -5,62 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Buscar</title>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/alertify.core.css" />
-  <link rel="stylesheet" href="css/alertify.bootstrap.css" />
+    <link rel="stylesheet" href="css/alertify.core.css" />
+    <link rel="stylesheet" href="css/alertify.bootstrap.css" />
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-amber.min.css" /> 
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/estilo.css">
   </head>
   <body>
 
     <div class="wrapper">
-      <header style="position: relative; z-index: 5;">
-        <nav id="menu">
-          <a class="nav-mobile" id="nav-mobile" href="#"></a>
-          <button id="voz">Voz</button>
-          <ul>
-             <li>
-              <img src="images/buscar.png" alt="">
-              <a href="lista.html">Buscar</a>
-            </li>
-             <li>
-            <img src="images/logout.png" alt="">
-              <a href="canciones.html">Tus Canciones</a>
-            </li>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+        <header class="mdl-layout__header" style="position: relative; z-index: 5;">
 
-            <li>
-           <img src="images/perfil.png" alt="">
-             <a href="perfil.html">Perfil</a>
-           </li>
-            <li>
-              <img src="images/logout.png" alt="">
-              <a href="" id="logout">Logout</a>
-          </ul>
-        </nav>
-      </header>
+          <nav>
+            <!-- Left aligned menu below button -->
+              <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
 
-        <section id="tracklist">
-          <h1 id="busca">Busca tus canciones favoritas</h1>
-          <input placeholder="Buscar" type="text" name="buscar" id="busqueda" />
-          <div id="contenedorListas">
-          <ul id="listaCancionesSC">
-          </ul>
+              <ul id="ul-nav" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                  for="demo-menu-lower-left">
+                <li class="mdl-menu__item">
+                  <i class="material-icons">search</i>
+                  <a class="position-menu" href="#">Buscar</a>
+                  
+                </li>
+                <li class="mdl-menu__item">
+                  <i class="material-icons">account_circle</i>
+                  <a class="position-menu" href="perfil.html">Perfil</a>
+                </li>
+                <li class="mdl-menu__item">
+                  <i class="material-icons">arrow_back</i>
+                  <a class="position-menu" href="#" id="logout">Logout</a>
+                </li>
+              </ul>
+           </nav>
 
-          <ul id="listaCancionesYT">
-          </ul>
-
-          <ul id="listaCancionesSP">
-
-          </ul>
+          <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+              <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Buscar</a>
+              <a id="favorites" href="#fixed-tab-2" class="mdl-layout__tab">Favoritos</a>
           </div>
-        </section>
 
+          <p id="titulo">Canciones</p>
+        </header>
+        <main class="mdl-layout__content">
+          <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+            <div class="page-content">
+              <!-- Tab 1 -->
+               
+
+                <!-- Botón buscar -->
+                <div class="border-div">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                      <label class="mdl-button mdl-js-button mdl-button--icon" for="expando1">
+                        <i class="material-icons">search</i>
+                      </label>
+                      <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="expando1" placeholder="Buscar canciones" />
+                        <label class="mdl-textfield__label" for="expando1">Expandable text field</label>
+                      </div>
+                  </div>
+
+                  <!-- botón de voz -->
+                  
+                    <button class="mdl-button mdl-js-button mdl-button--icon" id="voz">
+                      <i class="material-icons">mic</i>
+                    </button>
+            
+                  <!-- <button id="voz">Voz</button> -->
+                </div>
+
+                <section id="tracklist">
+                <div id="contenedorListas">
+                <ul id="listaCancionesSC">
+                </ul>
+
+                <ul id="listaCancionesYT">
+                </ul>
+
+                <ul id="listaCancionesSP">
+
+                </ul>
+
+                <ul id="canciones"></ul>
+                </div>
+              </section>
+
+              <!-- Aquí acaba el contenido del tab 1 -->
+            </div>
+          </section>
+          <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+            <div class="page-content">
+              <!-- Tab 2 -->
+              <section id="tracklistFavs">
+                <div id="contenedorListasFavs">
+                  <ul id="listaCancionesFavs">
+                  </ul>
+                </div>
+              </section>
+              <!-- Aquí acaba el contenido del tab 2 -->
+            </div>
+          </section>
+
+          
+        </main>
       </div>
-
+        
+      
+    </div>
+  
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/alertify.min.js"></script>
-  <script src="js/annyang.min.js"></script>  
+  <script src="js/annyang.min.js"></script> 
   <script src="js/buscar.js"></script>
-  <script src="js/voz.js"></script>
-  <script src="js/desplegarMenu.js"></script>
+  <script src="js/voz.js"></script> 
+  <script src="js/canciones.js"></script>
   <script src="js/logout.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 "use strict";
 function Entrar(username,password){
-	var url = 'http://heylisten20151203051142.azurewebsites.net/api/usuarios';
+	var url = 'http://heylistenapi.azurewebsites.net/usuarios';
 	$.ajax({
 		url: url,
 		type: 'GET',
@@ -8,15 +8,21 @@ function Entrar(username,password){
 		success: function(usuarios){
 			$.each(usuarios, function(i , usuario)
 			{
-				if(username == usuario.username && password == usuario.password)
-				{
-					localStorage["usuario"] = usuario.UsuarioID;
-					window.location.href = "canciones.html";
-				}else{
-					$('#errorContraseña').empty();
-					$('#errorContraseña').append('<li class="rojo">Usuario y/o Contraseña incorrecta</li>');
-				}
+				$.each(usuario , function(i , u){
+					if(username == u.nombre && password == u.contrasena)
+					{
+						localStorage["usuario"] = u.id;
+						window.location.href = "canciones.html";
+						console.log(localStorage["usuario"]);
+					}else{
+						alertify.error("Contraseña o Usuario incorrecto");
+					}
+				});
+				
 			});
+		},
+		error: function(error){
+			console.log('error - ' + error);
 		}
 	});
 

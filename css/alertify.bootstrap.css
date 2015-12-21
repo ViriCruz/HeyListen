@@ -38,9 +38,9 @@
 				box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 			}
 			.alertify-text:focus {
-				border-color: #C620A1;
+				border-color: #3f51b5;
 				outline: 0;
-				box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #C620A1;
+				box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #3f51b5;
 			}
 
 		.alertify-buttons {
@@ -67,7 +67,7 @@
 			}
 			.alertify-button:focus {
 				outline: none;
-				box-shadow: 0 0 5px #C620A1;
+				box-shadow: 0 0 5px #3f51b5;
 			}
 			.alertify-button:active {
 				position: relative;
@@ -97,16 +97,16 @@
 				.alertify-button-ok:focus,
 				.alertify-button-ok:active {
 					text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-					background-color: #C620A1;
-					border: 1px solid #C620A1;
-					border-color: #C620A1 #C620A1 rgb(131, 8, 98);
+					background-color: #3f51b5;
+					border: 1px solid #3f51b5;
+					border-color: #3f51b5 #3f51b5 rgb(131, 8, 98);
 					border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 					color: #FFF;
 				}
 				.alertify-button-ok:hover,
 				.alertify-button-ok:focus,
 				.alertify-button-ok:active {
-					background: #C620A1;
+					background: #3f51b5;
 				}
 
 .alertify-log {

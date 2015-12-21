@@ -1,6 +1,6 @@
 "use strict";
 function Registrar() {
-	var url = 'http://heylisten20151203051142.azurewebsites.net/api/usuarios';
+	var url = 'http://heylistenapi.azurewebsites.net/usuarios';
 	var formulario = {};
 	formulario.username = $('#username').val();
 	formulario.password = $('#password').val();

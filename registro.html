@@ -4,24 +4,54 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Registrate</title>
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-amber.min.css" /> 
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="css/alertify.core.css" />
 	<link rel="stylesheet" href="css/alertify.bootstrap.css" />
+	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 	<div class="wrapper">
-		<h1>Crear cuenta nueva</h1>
+		<h1 class="archivoNarrow">Crear cuenta nueva</h1>
 		<form action="post" id="formulario">
 			<div id="contenedor">
-			<label for="" class="secondary-text-color"></label><br>
-			<input type="text" placeholder="Usuario" class="txtbox" name="username" id="username" required><br>
-			<label for="" class="secondary-text-color"></label><br>
-			<input type="email" placeholder="Email"  class="txtbox" name="email" id="email" required><br>
-			<label for="" class="secondary-text-color"></label><br>
-			<input type="password" placeholder="Contraseña" class="txtbox" name="password" id="password" required><br>
-			<label for="" class="secondary-text-color"></label><br>
-			<input type="password" placeholder="Confirmar contraseña" class="txtbox" name="password2" id="password2" required><br>
-			<input type="submit" value="Registrar" class="dark-primary-color btnRegistro" id="btnRegistrar">
+
+				<div class="tamanio mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+					<input type="text" class="border-input mdl-textfield__input" name="username" id="username" required>
+					<label for="username" class="fuente mdl-textfield__label">username</label>
+					
+
+				</div>
+
+				<div class="tamanio mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+					<input type="email" class="border-input mdl-textfield__input" name="email" id="email" required>
+					<label for="email" class="fuente mdl-textfield__label">email</label>
+					
+				</div>
+
+				<div class="tamanio mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input type="password" class="border-input mdl-textfield__input" name="password" id="password" required>
+					<label for="password" class="fuente mdl-textfield__label">contraseña</label>
+					
+				</div>
+
+				<div class="tamanio mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input type="password" class="border-input mdl-textfield__input" name="password2" id="password2" required>
+					<label for="password2" class="fuente mdl-textfield__label">confirmar contraseña<label>
+					
+				</div>
+			
+			
+			
+			
+			<input type="submit" value="crear" class="archivoNarrow entrar mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btnRegistrar">
+			<button class="entrar archivoNarrow mdl-button mdl-js-button mdl-button--primary">
+  				atrás
+			</button>
 			</div>
 		</form>
 
