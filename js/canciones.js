@@ -1,6 +1,6 @@
 "use strict";
 function  Cargar() {
-	var id = localStorage["usuario"];
+	var id = localStorage["a8d7f0a88sdfa7s0d8"];
 	var url = 'http://heylistenapi.azurewebsites.net/canciones/'+id;
 	$.ajax({
 			url: url,

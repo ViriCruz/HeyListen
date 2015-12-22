@@ -8,7 +8,11 @@
     },
     "installed_plugins": {
         "cordova-plugin-splashscreen": {},
-        "cordova-plugin-device": {}
+        "cordova-plugin-device": {},
+        "cordova-plugin-file": {},
+        "cordova-plugin-dialogs": {},
+        "cordova-plugin-inappbrowser": {},
+        "cordova-plugin-media": {}
     },
     "dependent_plugins": {}
 }

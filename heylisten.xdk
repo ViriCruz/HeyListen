@@ -1,0 +1,381 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "creationData": {
+      "type": "Import",
+      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+      "src": "",
+      "projectGuid": "c3e0e1c3-98cc-45a9-bae0-6ecfc08a4eb0",
+      "lastModifiedDate": 1450812983720,
+      "creationDate": 1450760606352
+    },
+    "sourceDirectory": "",
+    "cordovaPluginsDirectory": "plugins",
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "testDirectory": "test",
+    "startFile": "index.html",
+    "projectTags": [],
+    "projectFiles": {},
+    "projectDirectories": {
+      "xdk": {
+        "settings": {
+          "project": {
+            "XDK-generated": "true"
+          }
+        }
+      }
+    },
+    "libraries": [],
+    "cordovaPlugins": [
+      {
+        "version": "1.1.0",
+        "sourceLocation": "",
+        "selectedState": "Included",
+        "name": "Device",
+        "originType": "cordova.io",
+        "id": "cordova-plugin-device",
+        "origin": "cordova-plugin-device",
+        "data": {},
+        "paramvals": {},
+        "permissions": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "topLevel": true,
+        "checksum": "1eae5d64",
+        "gitref": "",
+        "description": "Cordova Device Plugin"
+      },
+      {
+        "version": "2.1.0",
+        "sourceLocation": "",
+        "selectedState": "Included",
+        "name": "Splashscreen",
+        "originType": "cordova.io",
+        "id": "cordova-plugin-splashscreen",
+        "origin": "cordova-plugin-splashscreen",
+        "data": {},
+        "paramvals": {},
+        "permissions": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "topLevel": true,
+        "checksum": "170efb68",
+        "gitref": "",
+        "description": "Cordova Splashscreen Plugin",
+        "cordovaVersion": ">=3.1.0"
+      },
+      {
+        "id": "cordova-plugin-file",
+        "name": "File",
+        "version": "2.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-file",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-file",
+        "selectedState": "Included",
+        "checksum": "a32414d6",
+        "dependsOn": [],
+        "topLevel": true,
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova File Plugin",
+        "data": {},
+        "dependedBy": [
+          "cordova-plugin-media"
+        ]
+      },
+      {
+        "id": "cordova-plugin-dialogs",
+        "name": "Notification",
+        "version": "1.2.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-dialogs",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-dialogs",
+        "selectedState": "Included",
+        "checksum": "1af74557",
+        "dependsOn": [],
+        "topLevel": true,
+        "permissions": {},
+        "description": "Cordova Notification Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-inappbrowser",
+        "name": "InAppBrowser",
+        "version": "1.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-inappbrowser",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-inappbrowser",
+        "selectedState": "Included",
+        "checksum": "20096ffc",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {},
+        "description": "Cordova InAppBrowser Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-media",
+        "name": "Media",
+        "version": "1.0.1",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-media",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-media",
+        "selectedState": "Included",
+        "checksum": "93cdda44",
+        "dependsOn": [
+          "cordova-plugin-file"
+        ],
+        "topLevel": true,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.RECORD_AUDIO",
+            "android.permission.MODIFY_AUDIO_SETTINGS",
+            "android.permission.WRITE_EXTERNAL_STORAGE",
+            "android.permission.READ_PHONE_STATE"
+          ]
+        },
+        "description": "Cordova Media Plugin",
+        "data": {},
+        "dependedBy": []
+      }
+    ],
+    "serviceMethods": [],
+    "buildConfigurations": {
+      "Android": {
+        "platform_": "android",
+        "runtime_": "Cordova 3.x",
+        "name_": "Android",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "22",
+          "android-installLocation": "auto"
+        },
+        "isActive_": true,
+        "appName_": "heylisten",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.2",
+        "appVersionCode_": "1",
+        "crosswalkVersion_": "14",
+        "cordovaCLIVersion_": "5.1.1"
+      },
+      "Android-Crosswalk": {
+        "platform_": "android",
+        "runtime_": "Crosswalk with Cordova 3.x",
+        "name_": "Android-Crosswalk",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
+        },
+        "isActive_": true,
+        "appName_": "heylisten",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appVersionCode_": "1",
+        "crosswalkVersion_": "15",
+        "cordovaCLIVersion_": "5.1.1"
+      },
+      "iOS": {
+        "platform_": "ios",
+        "runtime_": "Cordova 3.x",
+        "name_": "iOS",
+        "preferences_": {
+          "ios-target": "6",
+          "ios-configuration": "adhoc"
+        },
+        "isActive_": true,
+        "appName_": "heylisten",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "cordovaCLIVersion_": "5.1.1",
+        "iosProvs_": []
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
+        "name_": "Windows8",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "heylisten",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.0.1",
+        "cordovaCLIVersion_": "5.1.1"
+      },
+      "WebApp": {
+        "platform_": "webapp",
+        "runtime_": "W3C",
+        "name_": "WebApp",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "heylisten",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
+      },
+      "Firefox": {
+        "platform_": "firefoxos",
+        "runtime_": "W3C on Firefox OS",
+        "name_": "Firefox",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "heylisten",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+        "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "heylisten",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
+      },
+      "Facebook": {
+        "platform_": "facebook",
+        "runtime_": "W3C on Facebook",
+        "name_": "Facebook",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "heylisten",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
+      },
+      "WP81": {
+        "platform_": "wp81",
+        "runtime_": "Cordova 3.x",
+        "name_": "WP81",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "heylisten",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.0.1",
+        "cordovaCLIVersion_": "5.1.1"
+      }
+    }
+  }
+}
